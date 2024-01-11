@@ -1,0 +1,18 @@
+<div class="main-search row justify-content-center">
+    <div class="col-lg-12 col-md-10 ftco-animate fadeInUp ftco-animated">
+      <form (ngSubmit)="searchArticle()" class="domain-form">
+        <div class="form-group d-md-flex">
+          <input type="text" class="form-control px-4" [formControl]="searchFormControl" placeholder="Article, Subject, Journal etc...">
+          <input type="submit" class="search-domain btn btn-primary px-5" value="Search Article">
+        </div>
+      </form>
+      <div class="result-container" [ngClass]="{'show': showSuggestions}">
+        <ul class="suggestions">
+          <li *ngFor="let suggestion of filteredSuggestions | async" class="suggestion">{{ suggestion }}</li>
+          <li class="suggestion"><a href="">Suggestion 1</a></li>
+          <li class="suggestion"><a href="">Suggestion 2</a></li>
+          <li class="suggestion"><a href="">Suggestion 2</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,94 @@
+<section class="position-relative pt-5 pb-4 login-page">
+    <!-- Sign in form -->
+    <div class="container d-flex align-content-around flex-wrap justify-content-center justify-content-xl-start h-100 pt-5">
+        <div class="w-100 align-self-end pt-1 pt-md-4 pb-4" style="max-width: 526px;">
+            <a [routerLink]="['/login']" class="back-home"><i class="bi bi-arrow-left"></i></a>
+            <h1 class="text-center text-xl-start login-h1">Create Your Account!</h1>
+            <p class="text-center text-xl-start pb-3 mb-3">Use your email for registration</p>
+            <form id="myForm" class="needs-validation mb-2" novalidate>
+                <div class="position-relative mb-4">
+                    <label for="name" class="form-label fs-base">First Name</label>
+                    <input type="text" id="name" class="form-control form-control-lg" required="">
+                </div>
+                <div class="position-relative mb-4">
+                    <label for="name" class="form-label fs-base">Last Name</label>
+                    <input type="text" id="name" class="form-control form-control-lg" required="">
+                </div>
+                <div class="position-relative mb-4">
+                    <label for="email" class="form-label fs-base">Email</label>
+                    <input type="email" id="email" class="form-control form-control-lg" required="">
+                </div>
+                <button type="submit" class="btn-login btn btn-primary shadow-primary btn-lg w-100" id="submitBtn" (click)="onSubmit()">
+                    <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>Register Account
+                </button>
+            </form>
+            <form id="myForm2" class="d-none">
+                <div class="mb-4">
+                <label for="password" class="form-label fs-base">Country</label>
+                <select id="yourSelectElement" class="form-select select2" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label fs-base">New Password</label>
+                    <div class="password-toggle">
+                      <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control form-control-lg" id="password" name="password" required>
+                      <button class="btn eye-cls" type="button" (click)="togglePasswordVisibility()">
+                        <i class="bi bi-eye{{ showPassword ? '-slash' : '' }}"></i>
+                      </button>
+                    </div>
+                  <div id="passwordCriteria" class="form-text mt-1 mt-2">
+                    <ul class="criteria-ul">
+                      <li id="lengthCriteria">At least 8 characters</li>
+                      <li id="uppercaseCriteria">At least one uppercase letter</li>
+                      <li id="lowercaseCriteria">At least one lowercase letter</li>
+                      <li id="numberCriteria">At least one number</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label fs-base">Confirm Password</label>
+                    <div class="password-toggle">
+                      <input type="password" id="password" class="form-control form-control-lg" required>
+                    </div>
+                </div>
+                <a [routerLink]="['/sucess-modal']" type="submit" class="btn-login2 btn btn-primary shadow-primary btn-lg w-100">
+                    <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>
+                    Create Account
+                </a>
+            </form>
+
+            <div class="social-bx row row-cols-1 row-cols-sm-3">
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg w-100 fb-btn">
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-google btn-lg w-100 g-btn">
+                        <i class="bi bi-google"></i>
+                        Google
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg w-100 linke-btn">
+                        <i class="bi bi-linkedin"></i>
+                        Linkedin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Background -->
+    <div class="position-absolute top-0 end-0 w-50 h-100 bg-position-center bg-repeat-0 bg-size-cover d-none d-xl-block"
+        style="
+        background-image: url(assets/img/login/signin-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        ">
+    </div>
+</section>

@@ -1,0 +1,23 @@
+.chat-robot {
+    right: 25px;
+    width: 170px;
+    height: 170px;
+    position: fixed;
+    bottom: 25px;
+}
+.popover[class*=tour-] {
+    z-index: 1102;
+    position: absolute !important;
+    right: 250px;
+    bottom: 25%;
+    left: auto !important;
+    height: fit-content !important;
+}
+#panel3{
+    z-index: 1102;
+    position: absolute !important;
+    right: 250px;
+    bottom: 25%;
+    left: auto !important;
+    height: fit-content !important;
+}

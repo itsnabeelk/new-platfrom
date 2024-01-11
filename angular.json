@@ -35,9 +35,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/custom.css",
+              "src/assets/css/bootstrap-tour.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.7.1.min.js",
+              "src/assets/js/bootstrap-tour.js",
+              "src/assets/js/snippets.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/tour-lib.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b705447c-0a03-4fef-a49e-8222aceacab9"
   }
 }

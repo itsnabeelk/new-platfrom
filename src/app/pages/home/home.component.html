@@ -1,0 +1,129 @@
+
+<app-header></app-header>
+<section class="hero-banner">
+  <span class="position-absolute top-0 start-0 w-100 h-auto" style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);"></span>
+  <div class="d-flex flex-column justify-content-center align-items-center py-5 content-hero h-100">
+    <div class="banner-content container position-relative text-center zindex-5 pt-4 pt-md-5 pb-5 mt-auto">
+      <div class="row mt-5">
+        <div class="col-xl-10 mx-auto">
+          <h1 class="display-1 mb-md-4 pb-3" id="panel2">ADRI PLATFORM</h1>
+          <p class="mt-2 center">All content in the repository was taken from English sources and translated into Arabic. Here, you can conduct a full-text search for articles in your area of interest, all in Arabic!</p>
+        </div>
+         <app-search-home></app-search-home>
+      </div>
+    </div>
+    <div class="container mt-auto pb-lg-2 pb-xl-3">
+      <!-- Additional content here -->
+    </div>
+  </div>
+  <div class="bg-banner">
+    <img src="assets/img/home/hero-bg.png" class="w-100 h-100" alt="">
+  </div>
+  <div class="hero-anim mt-10">
+    <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
+</div>
+</section>
+
+<!-- info-pop -->
+<!-- <div class="betatag">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <ng-lottie class="info-icon" [options]="options2" (animationCreated)="onAnimate($event)"></ng-lottie>
+      <div class="d-flex gap-2 w-100 justify-content-between">
+        <div>
+          <h6 class="mb-0">INFORMATION</h6>
+          <p class="mb-0 opacity-100">This website is <strong class="text-yellow">Beta Version Now</strong></p>
+        </div>
+        <small class="opacity-50 text-nowrap">{{ countdown }}</small>
+      </div>
+    </a>
+</div> -->
+<!-- close -->
+
+<!-- intrest-popup -->
+<div class="modal fade" tabindex="-1" role="dialog" id="popupModal">
+    <div class="modal-dialog modal-dialog-centered interest-dialog">
+        <div class="modal-content interest-bg">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body interest-body">
+                <h1>Get Started by <br> Picking Up Interest</h1>
+                <div class="container">
+                    <ul class="interest-list">
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Computer Science
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Philosophy
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Religion
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Social science
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Language
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Science
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Technology
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Arts
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    Literature
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['']">
+                                <div class="border-int">
+                                    History
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

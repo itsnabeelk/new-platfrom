@@ -1,0 +1,62 @@
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <div class="navbar-brand">
+       <object type="image/svg+xml" data="assets/img/logo/logo.svg" class="w-100"></object>
+    </div>
+    <div class="d-flex">
+      <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg w-100" id="submitBtn" id="panel1">
+        <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>subscribe Now
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <a class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          <img src="assets/img/logo/logi-lite.png"  width="100" height="50" alt="">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+          
+<div class="profile-drop d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
+  <div class="dropdown text-end">
+  <a href="#" class="name-div d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+  <img src="https://github.com/mdo.png" alt="mdo" width="50" height="50" class="rounded-circle">
+  Nabeel Mohammed
+  </a>
+  <ul class="dropdown-menu profile-list text-small" style="">
+  <li><a class="dropdown-item" href="#">New project...</a></li>
+  <li><a class="dropdown-item" href="#">Settings</a></li>
+  <li><a class="dropdown-item" href="#">Profile</a></li>
+  <li><hr class="dropdown-divider"></li>
+  <li><a [routerLink]="['/login']" class="dropdown-item" href="#">Sign out</a></li>
+  </ul>
+  </div>
+</div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">ADRI BOT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              OUR PRODUCTS
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">PLAGIARISM CHECKER</a></li>
+              <li><a class="dropdown-item" href="#">REVIEWER</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SUPPORT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+

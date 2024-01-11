@@ -1,0 +1,63 @@
+<section class="position-relative pt-5 pb-4 login-page">
+    <!-- Sign in form -->
+    <div class="container d-flex align-content-around flex-wrap justify-content-center justify-content-xl-start h-100 pt-5">
+        <div class="w-100 align-self-end pt-1 pt-md-4 pb-4" style="max-width: 526px;">
+            <a [routerLink]="['/home']" class="back-home"><i class="bi bi-house"></i></a>
+            <h1 class="text-center text-xl-start login-h1">Your Gateway to Arabic Knowledge!</h1>
+            <p class="text-center text-xl-start pb-3 mb-3">Don’t have an account yet? <a
+                    [routerLink]="['/register-account']" class="register-btn">Register here.</a></p>
+            <form id="myForm" class="needs-validation mb-2" novalidate="" (submit)="onSubmit()">
+                  <div class="position-relative mb-4">
+                    <label for="email" class="form-label fs-base">Email</label>
+                    <input type="email" id="email" class="form-control form-control-lg" required="">
+                    <span id="emailFeedback" class="form-text"></span>
+                  </div>
+                  <div class="mb-4">
+                    <label for="password" class="form-label fs-base">Password</label>
+                    <div class="password-toggle">
+                      <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control form-control-lg" id="password" name="password" required>
+                      <button class="btn eye-cls" type="button" (click)="togglePasswordVisibility()">
+                        <i class="bi bi-eye{{ showPassword ? '-slash' : '' }}"></i>
+                      </button>
+                    </div>
+                    <span id="passwordFeedback" class="form-text"></span>
+                  </div>
+                <a [routerLink]="['/home']" type="submit" class="btn-login btn btn-primary shadow-primary btn-lg w-100" id="submitBtn">
+                    <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>Sign in
+                </a>
+            </form>
+            <a [routerLink]="['/forgot-password']" class="btn btn-link btn-lg w-100 forgot-btn">Forgot your
+                password?</a>
+            <hr class="my-4">
+            <h6 class="text-center mb-4">Or sign in with your social network</h6>
+            <div class="row row-cols-1 row-cols-sm-3">
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg w-100 fb-btn">
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-google btn-lg w-100 g-btn">
+                        <i class="bi bi-google"></i>
+                        Google
+                    </a>
+                </div>
+                <div class="col mb-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook btn-lg w-100 linke-btn">
+                        <i class="bi bi-linkedin"></i>
+                        Linkedin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Background -->
+    <div class="position-absolute top-0 end-0 w-50 h-100 bg-position-center bg-repeat-0 bg-size-cover d-none d-xl-block"
+        style="
+        background-image: url(assets/img/login/signin-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        ">
+    </div>
+</section>
