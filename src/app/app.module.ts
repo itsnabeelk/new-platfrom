@@ -13,6 +13,8 @@ import { LottieModule } from 'ngx-lottie';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SearchHomeComponent } from './component/search-home/search-home.component';
 import { SucessModalComponent } from './component/sucess-modal/sucess-modal.component';
+import { CategoriesSliderComponent } from './component/categories-slider/categories-slider.component';
+import { RecentArticlesComponent } from './component/recent-articles/recent-articles.component';
 export function playerFactory() {
   return import('lottie-web');
 }
@@ -28,6 +30,8 @@ export function playerFactory() {
     RegisterAccountComponent,
     SearchHomeComponent,
     SucessModalComponent,
+    CategoriesSliderComponent,
+    RecentArticlesComponent,
   ],
   imports: [
     BrowserModule,

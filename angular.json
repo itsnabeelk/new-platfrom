@@ -37,15 +37,17 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/bootstrap.min.css",
-              "src/assets/css/custom.css",
-              "src/assets/css/bootstrap-tour.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/slick.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.7.1.min.js",
-              "src/assets/js/bootstrap-tour.js",
-              "src/assets/js/snippets.js",
+              "src/assets/js/slick.min.js",
+              "src/assets/js/owl.carousel.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
-              "src/assets/js/tour-lib.js",
+              "src/assets/js/snippets.js",
               "src/assets/js/custom.js"
             ]
           },

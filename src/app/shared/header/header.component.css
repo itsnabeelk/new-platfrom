@@ -6,6 +6,7 @@
     background: transparent;
     z-index: 9999;
     background-color: transparent !important;
+    transition: 0.3s ease;
 }
 .offcanvas {
     background-color: #4300b1 !important;
@@ -37,3 +38,16 @@
     background: #370489;
     padding: 15px;
 }
+.fixed-nav {
+    background-color: #fff !important;
+    box-shadow: 2px 3px 20px 20px #7575750d;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+.fixed-nav .navbar-toggler {
+    filter: invert(1) !important;
+}
+.fixed-nav .navbar-brand {
+    filter: none !important;
+}
+

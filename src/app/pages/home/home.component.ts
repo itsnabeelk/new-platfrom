@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 declare var $: any;
-declare function bootstrapToUnr(): void;
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 
@@ -22,8 +21,6 @@ export class HomeComponent {
   }
   
   ngOnInit() {
-    bootstrapToUnr();
-    
     $(document).ready(() => {
       $('#popupModal').modal('show');
     });
