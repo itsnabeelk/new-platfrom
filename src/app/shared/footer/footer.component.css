@@ -21,3 +21,29 @@
     left: auto !important;
     height: fit-content !important;
 }
+
+.footer-main{
+    background: #f8f9fa;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.nav-item {
+padding-right: 10px;
+}
+.nav-link {
+    padding: 10px !important;
+}
+@media (max-width:780px) {
+.footer-main{
+    padding-top: 10px;
+}
+.nav-link{
+    padding: 5px !important;
+    font-size: 12px;
+}
+.footer-main{
+    margin-top: 35px;
+}
+}
