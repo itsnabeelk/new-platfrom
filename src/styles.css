@@ -992,6 +992,26 @@ display: none;
   .recent-main .card-body .card-text{
     margin-bottom: 40px;
 }
+.recent-main-list {
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    margin: 15px auto;
+    box-shadow: 0px 6px 20px 1px #6610f205;
+}
+.list-icon {
+    width: 50px;
+    padding: 5px;
+    background: #6610f20d;
+    margin: 0 15px;
+    margin-left: 0 !important;
+}
+.d-mob-block{
+    display: none;
+}
   /* close */
 
 
@@ -1061,4 +1081,31 @@ display: none;
         padding: 10px !important;
         font-size: 12px !important;
     }
+    .d-mob-none {
+        display: none !important;
+    }
+    .d-mob-block{
+        display: block !important;
+    }
+    .recent-main-list h5 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .recent-main-list p{
+        font-size: 12px !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .w-90 {
+        width: 100% !important;
+    }
   }
+
+.read-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}

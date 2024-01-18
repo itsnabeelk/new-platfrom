@@ -31,3 +31,9 @@
     padding: 10px 20px;
     margin: auto;
 }
+
+@media (max-width:780px) {
+    .btn-primary{
+        font-size: 12px;
+    }
+}

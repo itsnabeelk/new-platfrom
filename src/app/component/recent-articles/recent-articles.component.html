@@ -6,14 +6,11 @@
             <div class="row justify-content-center">
                <div class="col-12 text-center mb-5 m-auto">
                   <h1 class="text-uppercase">Recently Added Articles</h1>
-                  <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet delectus vitae animi magnam aliquid necessitatibus inventore repudiandae ipsum possimus dicta</p> 
-                  <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg mt-3" id="submitBtn" id="panel1">
-                    All Articles
-                  </a>
+                  <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet delectus vitae animi</p> 
                </div>
             </div>
          </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center d-mob-none">
         <div class="col-lg-3 col-sm-6 recent-main">
           <div class="card-img-top">
             <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
@@ -75,5 +72,57 @@
             </div>
           </div>
       </div>
+
+      <!-- list-style -->
+      <div class="recent-main-list d-mob-block">
+        <div class="content-list-recent d-flex gap-5">
+          <div class="">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="recent-main-list d-mob-block">
+        <div class="content-list-recent d-flex gap-5">
+          <div class="">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="recent-main-list d-mob-block">
+        <div class="content-list-recent d-flex gap-5">
+          <div class="">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="recent-main-list d-mob-block">
+        <div class="content-list-recent d-flex gap-5">
+          <div class="">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <a href="#" class="btn btn-primary">Checkout</a>
+        </div>
+      </div>
+
+      <div class="read-more-btn">
+        <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg mt-3" id="submitBtn" id="panel1">
+          All Articles
+        </a>
+      </div>
+
     </div>
   </section>
