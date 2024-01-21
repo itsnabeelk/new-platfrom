@@ -1,10 +1,4 @@
-.chat-robot {
-    right: 0;
-    width: 170px;
-    height: 170px;
-    position: fixed;
-    bottom: 0;
-}
+
 .popover[class*=tour-] {
     z-index: 1102;
     position: absolute !important;
@@ -22,28 +16,47 @@
     height: fit-content !important;
 }
 
-.footer-main{
-    background: #f8f9fa;
-    margin-top: 100px;
-    padding-top: 50px;
-    padding-bottom: 5px;
+.bg-black {
+    background-color: #1b1b1d !important;
 }
 
-.nav-item {
-padding-right: 10px;
+.mb-80, .mb-medium {
+    margin-bottom: 5rem;
 }
-.nav-link {
-    padding: 10px !important;
+.btn.btn-solid, a.btn.btn-solid, button.btn.btn-solid {
+    border: 2px solid;
+    border-radius: 130px;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .875rem 1.5rem;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transition-property: background-color,color,border-color,opacity;
+    transition-property: background-color,color,border-color,opacity;
 }
-@media (max-width:780px) {
-.footer-main{
-    padding-top: 10px;
+.btn-group, .btn.btn-icon, a.btn.btn-icon, button.btn.btn-icon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
-.nav-link{
-    padding: 5px !important;
-    font-size: 12px;
+.btn.btn-yellow, a.btn.btn-yellow, button.btn.btn-yellow {
+    background-color: #6610f2;
+    border-color: #6610f2;
+    color: #1b1b1d;
 }
-.footer-main{
-    margin-top: 35px;
+.bg-black .btn.btn-outline, .bg-black a.btn.btn-outline, .bg-black button.btn.btn-outline {
+    border-color: #fff;
 }
+
+.btn.btn-solid.icon-left, .btn.btn-solid.icon-right, a.btn.btn-solid.icon-left, a.btn.btn-solid.icon-right, button.btn.btn-solid.icon-left, button.btn.btn-solid.icon-right {
+    padding-bottom: .625rem;
+    padding-top: .625rem;
 }
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 130px !important;
+    border-bottom-right-radius: 130px !important;
+}
+

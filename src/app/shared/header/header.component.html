@@ -3,8 +3,11 @@
     <div class="navbar-brand">
        <object type="image/svg+xml" data="assets/img/logo/logo.svg" class="w-100"></object>
     </div>
-    <div class="d-flex">
-      <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg w-100" id="submitBtn" id="panel1">
+    <div class="d-flex btn-sub">
+      <a [routerLink]="['']" type="submit" class="ts-btn btn btn-primary shadow-primary btn-lg" id="submitBtn" id="panel1">
+        <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>ADRI Translate
+      </a>
+      <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg" id="submitBtn" id="panel1">
         <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>subscribe Now
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -65,4 +68,3 @@
     </div>
   </div>
 </nav>
-
