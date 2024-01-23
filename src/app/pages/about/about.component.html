@@ -1,0 +1,82 @@
+<app-header></app-header>
+<!-- inner-banner -->
+<div class="ib-master">
+    <div class="banner-anim mt-10">
+        <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
+    </div>
+    <div class="container h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <h1 class="h1-m">WHO WE ARE</h1>
+        </div>
+    </div>
+</div>
+<!-- inner-banner-close -->
+<div class="div-controller" style="background-image: url(assets/img/about/bg1.jpg);">
+<div class="container">
+        <div class="ct-main">
+            <h1 class="main-heading text-white">Your Gateway <br>
+                to Arabic Knowledge!</h1>
+            <p class="text-white-80">
+                ADRI is a leading deep tech company in the MENA region that specializes in developing AI technologies.
+                Its aim
+                is to
+                break the barrier to knowledge for Arabic speakers and empower the educational sector through its
+                products. This
+                led
+                to us launching “ ADRI Platform” which features the largest database of research articles available in
+                Arabic
+                ever
+                created, the most accurate cross-lingual plagiarism checker and specialized digital libraries. ADRI also
+                offers
+                mass
+                translation, transcription and subtitling services at a faster delivery and more affordable rate without
+                compromising on quality.
+            </p>
+        </div>
+        <a id="play-video" class="video-play-button" href="#">
+            <span></span>
+          </a>
+          <div id="video-overlay" class="video-overlay">
+            <a class="video-overlay-close">&times;</a>
+          </div>
+    </div>
+</div>
+<!-- <div class="vid-main">
+    <video loop="" muted="false" playsinline="" autoplay="true" oncanplay="this.play()"
+        onloadedmetadata="this.muted = true" width="100%">
+        <source src="assets/img/about/promo.mp4" type="video/mp4">
+    </video>
+</div> -->
+<div class="partner-logo" style="background-image: url(assets/img/about/partner/bg1.jpg);">
+    <div class="container">
+        <div class="d-partner d-flex justify-content-center align-items-center gap-5">
+            <div class="ct-main ct-partner">
+                <h1 class="main-heading text-black">Our Partners</h1>
+                <p class="text-muted">
+                    Our partners and companions in our endeavor to reduce the academic gap to enrich the Arabic content by translating academic research on all areas of life.
+                </p>
+                <div class="owl-carousel version-1">
+                    <div> <img src="assets/img/about/partner/partner1.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner2.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner3.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner4.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner5.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner6.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner7.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner8.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner9.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner10.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner11.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner12.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner13.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner14.webp"> </div>
+                    <div> <img src="assets/img/about/partner/partner15.webp"> </div>
+                  </div>
+            </div>
+            <div class="partner-anim mt-10">
+                <ng-lottie [options]="options2" (animationCreated)="onAnimate($event)"></ng-lottie>
+            </div>
+        </div>
+    </div>
+  </div>
+<app-footer></app-footer>

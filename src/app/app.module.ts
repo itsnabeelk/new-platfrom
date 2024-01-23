@@ -15,6 +15,7 @@ import { SearchHomeComponent } from './component/search-home/search-home.compone
 import { SucessModalComponent } from './component/sucess-modal/sucess-modal.component';
 import { CategoriesSliderComponent } from './component/categories-slider/categories-slider.component';
 import { RecentArticlesComponent } from './component/recent-articles/recent-articles.component';
+import { AboutComponent } from './pages/about/about.component';
 export function playerFactory() {
   return import('lottie-web');
 }
@@ -32,6 +33,7 @@ export function playerFactory() {
     SucessModalComponent,
     CategoriesSliderComponent,
     RecentArticlesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterAccountComponent } from './pages/login/register-account/register-account.component';
 import { ForgotPasswordComponent } from './pages/login/forgot-password/forgot-password.component';
 import { SucessModalComponent } from './component/sucess-modal/sucess-modal.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path: "sucess-modal",
     component: SucessModalComponent
+  },
+  {
+    path: "about",
+    component: AboutComponent
   }
 ];
 

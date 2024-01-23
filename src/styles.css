@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     background-color: #fff !important;
     background: #fff !important;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0 !important;
@@ -38,13 +39,16 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
     font-size: 2.5rem;
 }
+
 .pt-100{
     padding-top: 100px !important;
 }
 .pb-100{
     padding-bottom: 100px !important;
 }
-
+.text-white-80{
+    color: #fffc;
+}
 /* login-start */
 
 .login-page {
@@ -1136,6 +1140,7 @@ display: none;
     .btn-sub {
         width: auto;
         margin: 15px auto;
+        margin-right: 0;
     }
   }
 
@@ -1198,6 +1203,7 @@ display: none;
 .bg-black :not(.btn-yellow) {
     color: #fff;
     fill: #fff;
+    text-transform: uppercase;
 }
 .ft-h1 {
     font-weight: 700;
@@ -1246,7 +1252,7 @@ display: none;
     .ft-h1 {
         font-size: 18px !important;
     }
-    .footer-item+{
+    .footer-item{
         margin: 40px auto !important;
     }
     .ft-h1 {
@@ -1281,3 +1287,84 @@ display: none;
 }
 }
 /* close */
+
+/* about */
+.div-controller {
+    padding: 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.div-controller:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #6610f25c;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.3;
+}
+.ct-main{
+    z-index: 9;
+    position: relative;
+}
+.ib-master{
+    position:relative ;
+    width:100% ;
+    height:100%;
+    overflow: hidden;
+}
+.banner-anim {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.h1-m {
+    color: #fff;
+    position: relative;
+    font-size: 80px;
+    z-index: 99;
+}
+.ct-main h1 {
+    font-size: 45px;
+    margin-top: 30px;
+}
+.ct-main p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+@media (max-width:780px) {
+    .h1-m {
+        font-size: 35px !important;
+        margin-top: 50px;
+    }
+    .ib-master{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+}
+.main-heading{
+    text-transform: uppercase;
+}
+.partner-logo {
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* close-about */
