@@ -6,6 +6,9 @@ import { RegisterAccountComponent } from './pages/login/register-account/registe
 import { ForgotPasswordComponent } from './pages/login/forgot-password/forgot-password.component';
 import { SucessModalComponent } from './component/sucess-modal/sucess-modal.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { CareerComponent } from './pages/career/career.component';
+import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
 
 const routes: Routes = [
   {
@@ -35,6 +38,18 @@ const routes: Routes = [
   {
     path: "about",
     component: AboutComponent
+  },
+  {
+    path: "services",
+    component: ServicesComponent
+  },
+  {
+    path: "career",
+    component: CareerComponent
+  },
+  {
+    path: "career-inner",
+    component: CareerInnerComponent
   }
 ];
 

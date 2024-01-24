@@ -1,0 +1,93 @@
+.job-banner {
+    background: #3a0099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    flex-direction: column;
+}
+
+.career-in-anim {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    bottom: 0;
+    width: 100%;
+}
+.job-details{
+    padding:150px 0;
+}
+.job-banner h1 {
+    max-width: 800px;
+    margin: 0 15px;
+    text-align: center;
+}
+.job-banner p {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.btn-one{
+    background: #6610f2;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    z-index: 3;
+    position: relative;
+    transition: .4s;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.btn-one:hover{
+    color:#000;
+}
+.btn-one:hover:before{
+    transform: translateY(-50%) translate(-50%) scale(1);
+}
+.btn-one:before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 430px;
+    top: 50%;
+    left: 50%;
+    background: #ffbf00;
+    border-radius: 50%;
+    transform: translateY(-50%) translate(-50%) scale(0);
+    transition: all .5s ease-out 0s;
+    z-index: -1;
+}
+.btn-one i{
+    position: relative;
+    top: 0;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.bck-btn {
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid;
+    line-height: 26px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+@media (max-width:590px) {
+    .job-details{
+        padding: 50px 0;
+    }
+}

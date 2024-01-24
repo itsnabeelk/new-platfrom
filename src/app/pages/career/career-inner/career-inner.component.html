@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div class="job-banner">
+        <h1 class="text-uppercase">career
+            business development manager - government tenders</h1>
+        <p>Riyadh, Saudi Arabia</p>
+    <div class="career-in-anim mt-10">
+        <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
+    </div>
+</div>
+<div class="job-details">
+  <div class="container">
+    <div class="d-lg-flex d-md-block gap-5 justify-content-center align-items-start">
+        <div class="job-sum w-100">
+            <h5 class="mb-3">Job Summary</h5>
+            <p>
+             - Manage all accounting operations including A/R, A/P, GL, and payroll.<br>
+             - Prepare and file VAT returns on time.<br>
+             - Ensure timely and accurate monthly, quarterly, and year-end close processes.<br>
+             - Prepare and analyze financial statements, including balance sheets, income statements, and cash flow statements.<br>
+             - Assist in the preparation of budgets and forecasts.<br>
+             - Liaise with external auditors to ensure timely and accurate completion of audits.<br>
+             - Ensure compliance with tax regulations and reporting requirements.<br>
+             - Maintain accurate and up-to-date records of all financial transactions.<br>
+             - Prepare regular financial reports and analysis for management.<br>
+             - Provide support to the finance manager as required.<br>
+            </p>
+         </div>
+         <div class="job-req w-100">
+             <h5 class="mb-3">Requirements</h5>
+             <p>
+                 - Bachelor's degree in accounting, finance, or a related field.<br>
+                 - 3+ years of accounting experience, preferably in a tax or finance role.<br>
+                 - Strong knowledge of accounting principles and tax regulations.<br>
+                 - Needs to be fluent in both Arabic and English.<br>
+                 - Excellent analytical and problem-solving skills.<br>
+                 - Attention to detail and accuracy.<br>
+                 - Strong communication and interpersonal skills.<br>
+                 - Proficient in Microsoft Excel and accounting software.<br>
+                 - Ability to work independently and as part of a team.<br>
+             </p>
+        </div>
+    </div>
+    <div class="ap-btn mt-5">
+        <a [routerLink]="['/career']" class="bck-btn"><i class="bi bi-arrow-left-short"></i>Back</a>
+        <a class="btn-one">Apply Now<i class="bi bi-arrow-right-short"></i></a>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

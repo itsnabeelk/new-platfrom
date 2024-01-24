@@ -16,6 +16,9 @@ import { SucessModalComponent } from './component/sucess-modal/sucess-modal.comp
 import { CategoriesSliderComponent } from './component/categories-slider/categories-slider.component';
 import { RecentArticlesComponent } from './component/recent-articles/recent-articles.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { CareerComponent } from './pages/career/career.component';
+import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
 export function playerFactory() {
   return import('lottie-web');
 }
@@ -34,6 +37,9 @@ export function playerFactory() {
     CategoriesSliderComponent,
     RecentArticlesComponent,
     AboutComponent,
+    ServicesComponent,
+    CareerComponent,
+    CareerInnerComponent,
   ],
   imports: [
     BrowserModule,
