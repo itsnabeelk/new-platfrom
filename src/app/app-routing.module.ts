@@ -9,6 +9,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { CareerComponent } from './pages/career/career.component';
 import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
+import { TranslateComponent } from './pages/translate/translate.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     path: "career-inner",
     component: CareerInnerComponent
+  },
+  {
+    path: "translate",
+    component: TranslateComponent
   }
 ];
 

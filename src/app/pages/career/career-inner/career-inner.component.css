@@ -72,7 +72,7 @@
 .btn-one i{
     position: relative;
     top: 0;
-    margin-left: 15px;
+    margin-left: 0;
     font-size: 25px;
 }
 
@@ -90,4 +90,24 @@
     .job-details{
         padding: 50px 0;
     }
+}
+
+.form-control {
+    height: auto !important;
+    font-size: 15px;
+}
+.form-control-lg {
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
+}
+.mb-4 {
+    margin-bottom: 1rem !important;
+}
+label {
+font-size: 12px;
+}
+.btn-login {
+    margin-bottom: 0px !important;
+    padding: 10px 0 !important;
 }

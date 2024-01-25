@@ -93,3 +93,68 @@ function close_video() {
 };
 
 }
+
+function customSelect(){
+const customSelect = document.querySelector(".custom-select");
+const selectBtn = document.querySelector(".select-button");
+const customSelect2 = document.querySelector(".custom-select2");
+const selectBtn2 = document.querySelector(".select-button2");
+
+const selectedValue = document.querySelector(".selected-value");
+const selectedValue2 = document.querySelector(".selected-value2");
+const optionsList = document.querySelectorAll(".select-dropdown li");
+const optionsList2 = document.querySelectorAll(".select-dropdown2 li");
+
+// add click event to select button
+selectBtn.addEventListener("click", () => {
+  customSelect.classList.toggle("active");
+  selectBtn.setAttribute(
+    "aria-expanded",
+    selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+  );
+
+});
+
+selectBtn2.addEventListener("click", () => {
+  customSelect2.classList.toggle("active");
+  selectBtn2.setAttribute(
+    "aria-expanded",
+    selectBtn2.getAttribute("aria-expanded") === "true" ? "false" : "true"
+  );
+
+});
+
+optionsList.forEach((option) => {
+  function handler(e) {
+    if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
+      selectedValue.textContent = this.children[1].textContent;
+      customSelect.classList.remove("active");
+    }
+    // Key Events
+    if (e.key === "Enter") {
+      selectedValue.textContent = this.textContent;
+      customSelect.classList.remove("active");
+    }
+  }
+  option.addEventListener("keyup", handler);
+  option.addEventListener("click", handler);
+});
+
+
+optionsList2.forEach((option) => {
+  function handler(e) {
+    if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
+      selectedValue2.textContent = this.children[1].textContent;
+      customSelect2.classList.remove("active");
+    }
+    // Key Events
+    if (e.key === "Enter") {
+      selectedValue2.textContent = this.textContent;
+      customSelect2.classList.remove("active");
+    }
+  }
+  option.addEventListener("keyup", handler);
+  option.addEventListener("click", handler);
+});
+
+}

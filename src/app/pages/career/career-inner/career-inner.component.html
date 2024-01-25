@@ -1,49 +1,88 @@
 <app-header></app-header>
 <div class="job-banner">
-        <h1 class="text-uppercase">career
-            business development manager - government tenders</h1>
-        <p>Riyadh, Saudi Arabia</p>
-    <div class="career-in-anim mt-10">
+    <h1 class="text-uppercase">career
+        business development manager - government tenders</h1>
+    <p>Riyadh, Saudi Arabia</p>
+    <div class="career-in-anim mt-10 w-100">
         <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
     </div>
 </div>
 <div class="job-details">
-  <div class="container">
-    <div class="d-lg-flex d-md-block gap-5 justify-content-center align-items-start">
-        <div class="job-sum w-100">
-            <h5 class="mb-3">Job Summary</h5>
-            <p>
-             - Manage all accounting operations including A/R, A/P, GL, and payroll.<br>
-             - Prepare and file VAT returns on time.<br>
-             - Ensure timely and accurate monthly, quarterly, and year-end close processes.<br>
-             - Prepare and analyze financial statements, including balance sheets, income statements, and cash flow statements.<br>
-             - Assist in the preparation of budgets and forecasts.<br>
-             - Liaise with external auditors to ensure timely and accurate completion of audits.<br>
-             - Ensure compliance with tax regulations and reporting requirements.<br>
-             - Maintain accurate and up-to-date records of all financial transactions.<br>
-             - Prepare regular financial reports and analysis for management.<br>
-             - Provide support to the finance manager as required.<br>
-            </p>
-         </div>
-         <div class="job-req w-100">
-             <h5 class="mb-3">Requirements</h5>
-             <p>
-                 - Bachelor's degree in accounting, finance, or a related field.<br>
-                 - 3+ years of accounting experience, preferably in a tax or finance role.<br>
-                 - Strong knowledge of accounting principles and tax regulations.<br>
-                 - Needs to be fluent in both Arabic and English.<br>
-                 - Excellent analytical and problem-solving skills.<br>
-                 - Attention to detail and accuracy.<br>
-                 - Strong communication and interpersonal skills.<br>
-                 - Proficient in Microsoft Excel and accounting software.<br>
-                 - Ability to work independently and as part of a team.<br>
-             </p>
+    <div class="container">
+        <div class="d-lg-flex d-md-block gap-5 justify-content-center align-items-start">
+            <div class="job-sum w-100">
+                <h5 class="mb-3">Job Summary</h5>
+                <p>
+                    - Manage all accounting operations including A/R, A/P, GL, and payroll.<br>
+                    - Prepare and file VAT returns on time.<br>
+                    - Ensure timely and accurate monthly, quarterly, and year-end close processes.<br>
+                    - Prepare and analyze financial statements, including balance sheets, income statements, and cash
+                    flow statements.<br>
+                    - Assist in the preparation of budgets and forecasts.<br>
+                    - Liaise with external auditors to ensure timely and accurate completion of audits.<br>
+                    - Ensure compliance with tax regulations and reporting requirements.<br>
+                    - Maintain accurate and up-to-date records of all financial transactions.<br>
+                    - Prepare regular financial reports and analysis for management.<br>
+                    - Provide support to the finance manager as required.<br>
+                </p>
+            </div>
+            <div class="job-req w-100">
+                <h5 class="mb-3">Requirements</h5>
+                <p>
+                    - Bachelor's degree in accounting, finance, or a related field.<br>
+                    - 3+ years of accounting experience, preferably in a tax or finance role.<br>
+                    - Strong knowledge of accounting principles and tax regulations.<br>
+                    - Needs to be fluent in both Arabic and English.<br>
+                    - Excellent analytical and problem-solving skills.<br>
+                    - Attention to detail and accuracy.<br>
+                    - Strong communication and interpersonal skills.<br>
+                    - Proficient in Microsoft Excel and accounting software.<br>
+                    - Ability to work independently and as part of a team.<br>
+                </p>
+            </div>
+        </div>
+        <div class="ap-btn mt-5">
+            <a [routerLink]="['/career']" class="bck-btn"><i class="bi bi-arrow-left-short"></i>Back</a>
+            <a class="btn-one" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">Apply Now<i class="bi bi-arrow-right-short"></i></a>
         </div>
     </div>
-    <div class="ap-btn mt-5">
-        <a [routerLink]="['/career']" class="bck-btn"><i class="bi bi-arrow-left-short"></i>Back</a>
-        <a class="btn-one">Apply Now<i class="bi bi-arrow-right-short"></i></a>
-    </div>
-  </div>
 </div>
+
+<!-- form -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-uppercase" id="offcanvasExampleLabel">Job Form</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <form>
+            <div class="position-relative mb-4">
+                <label for="name" class="form-label fs-base">Name</label>
+                <input type="name" id="name" class="form-control form-control-lg" required="">
+            </div>
+            <div class="position-relative mb-4">
+                <label for="email" class="form-label fs-base">Email</label>
+                <input type="email" id="email" class="form-control form-control-lg" required="">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="form-label fs-base">Phone Number</label>
+                <div class="password-toggle">
+                    <input class="form-control form-control-lg" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="mb-5">
+                <label for="phone" class="form-label fs-base">Upload CV</label>
+            <div class="input-group">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+            </div>
+            </div>
+            <a [routerLink]="['/home']" type="submit" class="btn-login btn btn-primary shadow-primary btn-lg w-100"
+                id="submitBtn">
+                <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>submit
+            </a>
+        </form>
+    </div>
+</div>
+<!-- close -->
 <app-footer></app-footer>

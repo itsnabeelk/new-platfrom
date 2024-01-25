@@ -4,7 +4,7 @@
        <object type="image/svg+xml" data="assets/img/logo/logo.svg" class="w-100"></object>
     </div>
     <div class="d-flex btn-sub">
-      <a [routerLink]="['']" type="submit" class="ts-btn btn btn-primary shadow-primary btn-lg" id="submitBtn" id="panel1">
+      <a [routerLink]="['/translate']" type="submit" class="ts-btn btn btn-primary shadow-primary btn-lg" id="submitBtn" id="panel1">
         <span id="buttonSpinner" class="spinner-border spinner-border-sm d-none"></span>ADRI Translate
       </a>
       <a [routerLink]="['']" type="submit" class="btn-subscribe btn btn-primary shadow-primary btn-lg" id="submitBtn" id="panel1">
@@ -28,10 +28,11 @@
   <img src="https://github.com/mdo.png" alt="mdo" width="50" height="50" class="rounded-circle">
   Nabeel Mohammed
   </a>
-  <ul class="dropdown-menu profile-list text-small" style="">
-  <li><a class="dropdown-item" href="#">New project...</a></li>
-  <li><a class="dropdown-item" href="#">Settings</a></li>
+  <ul class="dropdown-menu profile-list text-small">
   <li><a class="dropdown-item" href="#">Profile</a></li>
+  <li><a class="dropdown-item" href="#">subscribtion</a></li>
+  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+  <li><a class="dropdown-item" href="#">Support</a></li>
   <li><hr class="dropdown-divider"></li>
   <li><a [routerLink]="['/login']" class="dropdown-item" href="#">Sign out</a></li>
   </ul>
@@ -40,7 +41,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Documents</a>
