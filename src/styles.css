@@ -28,6 +28,7 @@ body::-webkit-scrollbar-track {
 :root{
     --primary-adri-color:#6610f2;
     --second-adri-color:#ffbf00;
+    --sucess-adri-color:#26bf78;
 }
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
@@ -1442,6 +1443,51 @@ display: none;
     font-size: 25px;
 }
 
+.btn-two{
+    background:var(--second-adri-color);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    z-index: 3;
+    position: relative;
+    transition: .4s;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.btn-two:hover{
+    color:#000;
+}
+.btn-two:hover:before{
+    transform: translateY(-50%) translate(-50%) scale(1);
+}
+.btn-two:before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 430px;
+    top: 50%;
+    left: 50%;
+    background: var(--primary-adri-color);
+    border-radius: 50%;
+    transform: translateY(-50%) translate(-50%) scale(0);
+    transition: all .5s ease-out 0s;
+    z-index: -1;
+}
+.btn-two i{
+    position: relative;
+    top: 0;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
 .job-cl h6{
     font-weight: 400 !important;
     text-transform: uppercase;
@@ -1514,7 +1560,14 @@ translation
         padding: 80px 0;
     }
 }
-
+@media (max-width:999px) {
+    .h1-m {
+        font-size: 45px;
+    }
+}
+.translate-sec2{
+    padding: 150px 0;
+}
 /* 
 close
 */

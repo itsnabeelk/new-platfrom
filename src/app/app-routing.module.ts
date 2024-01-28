@@ -10,6 +10,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { CareerComponent } from './pages/career/career.component';
 import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
 import { TranslateComponent } from './pages/translate/translate.component';
+import { TranslatePackageComponent } from './pages/translate/translate-package/translate-package.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path: "translate",
     component: TranslateComponent
+  },
+  {
+    path: "translate-package",
+    component: TranslatePackageComponent
   }
 ];
 

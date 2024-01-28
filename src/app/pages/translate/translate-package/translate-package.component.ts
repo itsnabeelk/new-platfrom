@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-declare function customSelect():void;
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 @Component({
-  selector: 'app-translate',
-  templateUrl: './translate.component.html',
-  styleUrl: './translate.component.css'
+  selector: 'app-translate-package',
+  templateUrl: './translate-package.component.html',
+  styleUrl: './translate-package.component.css'
 })
-export class TranslateComponent {
+export class TranslatePackageComponent {
+
   options: AnimationOptions = {
     path: 'assets/img/about/banner.json'
   };
@@ -18,6 +18,7 @@ export class TranslateComponent {
     console.log(animationItem);
   }
   ngOnInit() {
-    customSelect();
+
   }
 }
+

@@ -1,0 +1,110 @@
+.tranpage-bn{
+    position: relative;
+    height: 15vh;
+    overflow: hidden;
+  }
+.trans-anim {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+.tr-package {
+  position: relative;
+  padding: 150px 0;
+}
+/* plan */
+.card-tr-pack h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700 !important;
+  margin-bottom: 30px;
+}
+.card-tr-pack p {
+  font-size: 14px;
+  color: #414141;
+}
+.card-tr-pack h4 {
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 400 !important;
+}
+.card-tr-pack h6 {
+  font-size: 15px;
+}
+.card-tr-pack span {
+  font-weight: 500;
+  font-size: 45px;
+}
+.pricing8 .pricing-box sup {
+  top: -20px;
+  font-size: 16px;
+}
+.card-tr-pack{
+  position: relative;
+  min-height:500px;
+  max-height: 600px;
+  width: 100%;
+  margin: 30px 0;
+  padding: 35px;
+}
+.btn-one {
+  background: #6610f2;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 0;
+  width: 100%;
+}
+.btn-one:before {
+  width: 100%;
+  background: #ffbf00;
+  border-radius: 0;
+}
+.btn-two {
+  background: #26bf78;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 0;
+  width: 100%;
+}
+.btn-two:before {
+  width: 100%;
+  background: #ffbf00;
+  border-radius: 0;
+}
+.ct-main p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.ct-main h1 {
+  font-size: 35px;
+  margin-top: 0;
+  font-weight: 800 !important;
+}
+.tr-auto-count {
+  font-size: 25px;
+  margin-top: 65px;
+  font-weight: 700 !important;
+  color: #079f59;
+}
+@media (max-width:978px) {
+  .tr-package {
+    padding: 80px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width:1250px) {
+  .card-tr-pack p {
+    font-size: 12px;
+  }
+}

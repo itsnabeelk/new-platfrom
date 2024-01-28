@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="tranpage-bn d-flex justify-content-center align-items-center">
+    <div class="trans-anim mt-10 w-100">
+        <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
+    </div>
+</div>
+
+<div class="tr-package">
+    <div class="container">
+        <div class="ct-main w-100">
+            <h1>Pricing to make your Work Effective</h1>
+            <P>We offer 100% satisafaction and Money back Guarantee</P>
+        </div>
+        <h3 class="tr-auto-count">Total Words : 8500</h3>
+        <!-- plan -->
+          <div class="d-lg-flex d-md-block justify-content-center align-items-center gap-5">
+                <div class="card card-tr-pack mb-4">
+                    <div class="card-body p-4 text-center">
+                        <h5 class="font-weight-normal">standard translation</h5>
+                        <sup>$</sup><span class="text-dark display-5">151.92</span>
+                        <h4 class="font-weight-light font-14">$0.18 PER WORD</h4>
+                        <h6 class="font-weight-light font-14">Expected Date : Jan 30, 2024</h6>
+                        <p class="mt-4">
+                            Our Standard Translation Tier is the ideal choice for users seeking a well-balanced and dependable document translation experience. With this option, you can expect consistent and reliable performance that caters to the needs of most users.
+                        </p>
+                    </div>
+                    <a class="btn-one">CHOOSE PLAN<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+                <div class="card card-tr-pack mb-4">
+                    <div class="card-body p-4 text-center">
+                        <h5 class="font-weight-normal">premium translation</h5>
+                        <sup>$</sup><span class="text-dark display-5">185.68</span>
+                        <h4 class="font-weight-light font-14">$0.22 PER WORD</h4>
+                        <h6 class="font-weight-light font-14">Expected Date : Jan 30, 2024</h6>
+                        <p class="mt-4">
+                            Our Premium Translation Tier is the ultimate choice for users who demand the highest level of sophistication and precision in document translation. With this top-tier option, you can anticipate an unparalleled translation experience that exceeds the expectations of even the most discerning users.
+                        </p>
+                    </div>
+                    <a class="btn-two">CHOOSE PLAN<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+            </div>
+        <!-- close -->
+    </div>
+</div>
+
+<app-footer></app-footer>

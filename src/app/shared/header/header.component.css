@@ -2,6 +2,7 @@
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
+
 .navbar {
     background: transparent;
     z-index: 9999;

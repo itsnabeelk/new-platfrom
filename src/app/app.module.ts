@@ -20,6 +20,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { CareerComponent } from './pages/career/career.component';
 import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
 import { TranslateComponent } from './pages/translate/translate.component';
+import { TranslatePackageComponent } from './pages/translate/translate-package/translate-package.component';
 export function playerFactory() {
   return import('lottie-web');
 }
@@ -42,6 +43,7 @@ export function playerFactory() {
     CareerComponent,
     CareerInnerComponent,
     TranslateComponent,
+    TranslatePackageComponent,
   ],
   imports: [
     BrowserModule,

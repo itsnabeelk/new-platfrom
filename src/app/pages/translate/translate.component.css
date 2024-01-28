@@ -7,9 +7,12 @@
 @media (max-width:762px) {
   .tranpage-bn{
     position: relative;
-    height: 55vh;
+    height: 45vh;
     overflow: hidden;
   }
+  .translator-sec {
+    padding: 10px 0;
+}
 }
 
 .trans-anim {
@@ -174,6 +177,14 @@ h2 {
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
+  }
+  .upload-file{
+    min-height: auto !important;
+  }
+  @media (max-width:992px) {
+    .ct-main {
+      text-align: center;
+  }
   }
   /*=============
    close
