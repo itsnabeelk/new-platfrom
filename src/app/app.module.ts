@@ -21,6 +21,8 @@ import { CareerComponent } from './pages/career/career.component';
 import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
 import { TranslateComponent } from './pages/translate/translate.component';
 import { TranslatePackageComponent } from './pages/translate/translate-package/translate-package.component';
+import { ContactComponent } from './contact/contact.component';
+import { AdribotComponent } from './pages/adribot/adribot.component';
 export function playerFactory() {
   return import('lottie-web');
 }
@@ -44,6 +46,8 @@ export function playerFactory() {
     CareerInnerComponent,
     TranslateComponent,
     TranslatePackageComponent,
+    ContactComponent,
+    AdribotComponent,
   ],
   imports: [
     BrowserModule,

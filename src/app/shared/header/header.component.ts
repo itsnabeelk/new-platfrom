@@ -6,10 +6,4 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isScrolled = false;
-
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    this.isScrolled = (window.pageYOffset > 0);
-  }
 }

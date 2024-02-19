@@ -40,7 +40,7 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/slick.css",
               "src/assets/css/owl.carousel.min.css",
-              "src/assets/css/owl.theme.default.css"
+              "src/assets/css/slick.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.7.1.min.js",
@@ -48,6 +48,7 @@
               "src/assets/js/owl.carousel.min.js",
               "src/assets/js/bootstrap.bundle.min.js",
               "src/assets/js/snippets.js",
+              "src/assets/js/vendor.js",
               "src/assets/js/custom.js"
             ]
           },

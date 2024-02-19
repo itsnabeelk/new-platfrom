@@ -1,0 +1,43 @@
+<app-header></app-header>
+<!-- inner-banner -->
+<div class="ib-master">
+    <div class="contact-anim mt-10 w-100">
+        <ng-lottie [options]="options" (animationCreated)="onAnimate($event)"></ng-lottie>
+    </div>
+</div>
+<!-- inner-banner-close -->
+
+<div class="contact-main">
+            <div class="contactus-anim mt-10 w-100">
+                <ng-lottie [options]="options2" (animationCreated)="onAnimate($event)"></ng-lottie>
+            </div>
+    <div class="container">
+        <div class="d-lg-flex justify-content-center align-items-center gap-5">
+            <div class="contact-txt w-100">
+                <h1>Let’s talk</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In aliquid, sapiente porro a dolore, perferendis suscipit voluptates eaque velit tenetur eius atque dolorem ullam minus deserunt voluptatem cupiditate nulla id!</p>
+                <a href="">contactadri.nz</a>
+            </div>
+        </div>
+        <div class="">
+            <div class="d-lg-flex gap-5">
+                <div class="contact-one">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#" class="location-link"> 8479 Al Mashat, Riyadh, Saudi Arabia </a>
+                    <a href="#" class="number-link">+966 531453581</a>
+                </div>
+                <div class="contact-two">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#" class="location-link"> 301, Building 114, Street 385, Manama, Bahrain</a>
+                    <a href="#" class="number-link">+973 32357001</a>
+                </div>
+                <div class="contact-three">
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="#" class="location-link"> 255 Middleton Road, Churton Park, Wellington 6037, New Zealand</a>
+                    <a href="#" class="number-link">+64 21 2930929</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

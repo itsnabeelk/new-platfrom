@@ -1,13 +1,12 @@
 .tranpage-bn{
   position: relative;
-  height: 100vh;
+  height: 15vh;
   overflow: hidden;
 }
 
 @media (max-width:762px) {
   .tranpage-bn{
     position: relative;
-    height: 45vh;
     overflow: hidden;
   }
   .translator-sec {
@@ -15,7 +14,7 @@
 }
 }
 
-.trans-anim {
+.trans-anim{
   position: absolute;
   top: 0;
   right: 0;

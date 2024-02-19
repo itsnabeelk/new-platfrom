@@ -56,7 +56,7 @@ a{
     padding-bottom: 100px !important;
 }
 .text-white-80{
-    color: #fffc;
+    color: #fff;
 }
 /* login-start */
 
@@ -1544,9 +1544,7 @@ display: none;
 }
 /* career-stop */
 
-/* 
-translation
-*/
+/* translation*/
 .translator-sec{
     padding: 150px 0;
 }
@@ -1568,6 +1566,105 @@ translation
 .translate-sec2{
     padding: 150px 0;
 }
-/* 
-close
-*/
+/* close*/
+
+/* service-section */
+.ai-service-main{
+    position: relative;
+    padding-bottom: 50px;
+}
+.service-anim {
+    width: 100%;
+}
+@media (max-width:990px) {
+    .ai-service-main{
+      text-align: center;
+    }
+    .service-anim {
+        width: 70%;
+        margin: auto;
+    }
+}
+/* close */
+
+/* contact us*/
+.contact-main{
+ padding: 150px 0;
+ position: relative;
+}
+.contact-main h1{
+    font-size: 50px !important;
+    font-weight: 700 !important;
+}
+.contact-main a{
+    font-size: 22px;
+    text-decoration: underline !important;
+    color: var(--bs-indigo);
+}
+
+.contact-one {
+    width: 100%;
+    padding: 25px;
+    background: #3c57f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 250px;
+    margin-top: 70px;
+    transition: 0.5s ease-in;
+}
+.contact-one a, .contact-two a, .contact-three a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact-two {
+    width:100%;
+    padding: 25px;
+    background: var(--primary-adri-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 250px;
+    margin-top: 70px;
+    transition: 0.5s ease-in;
+}
+.contact-three {
+    width:100%;
+    padding: 25px;
+    background: #ffbf00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 250px;
+    margin-top: 70px;
+    transition: 0.5s ease-in;
+}
+.location-link {
+    margin-bottom: 15px;
+    font-size: 18px !important;
+}
+.contact-one i, .contact-two i, .contact-three i {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.contact-one:hover, .contact-two:hover, .contact-three:hover {
+    background: #140131;
+    transition: 0.5s ease-in;
+}
+.contact-txt p{
+max-width: 700px;
+margin-right: auto;
+margin-top: 25px;
+}
+/* close */
+
+/* chatbot */
+
+/* close */
